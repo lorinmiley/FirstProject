@@ -1,0 +1,14 @@
+Line Segment Intersection
+_Line_
+2 5
+3 6
+5 7
+4 9
+_Line_
+2 8
+8 9
+3 7
+_Line_
+4 0
+3 33
+2 1
