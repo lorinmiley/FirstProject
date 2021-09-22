@@ -2,12 +2,11 @@
 #   Find the intersections between a given set of line segments.
 
 def find_intersections(data_array):
+    #Write result to this string that will print int txt file
     result = ''
 
     #dummy code
-    print(data_array[0])
-    result = data_array[0]
-
+    print(data_array)
 
 
 

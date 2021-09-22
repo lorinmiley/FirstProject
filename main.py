@@ -17,6 +17,23 @@ from closest_pair import *
 from largest_empty_circle import *
 import sys
 
+#function list_to_arrays converts a list of points in a 2d array of numerical values (can be used for 3 out of the 4 problem types)
+def array_to_points(data_array):
+    #Removes the first element of the array since we dont need it anymore (problem type)
+    data_array.pop(0)
+
+    #creates a 2d array with numerical points
+    rows, cols = (len(data_array), 2)
+    arr = [[0 for i in range(cols)] for j in range(rows)]
+    count = 0
+    for i in data_array:
+        points = i.split()
+        arr[count][0] = int(points[0])
+        arr[count][1] = int(points[1])
+        count = count + 1
+    return arr
+    
+    
 #main class
 class Main:
     @staticmethod
@@ -39,17 +56,18 @@ class Main:
 
         #else if the first line of the file asks for closest pair of points run this
         elif(data_array[0] == 'Closest Pair Of Points'):
-            results = find_closest_pair(data_array)
+            results = find_closest_pair(array_to_points(data_array))
 
         #else if the first line of the file asks for the Convex Hull
         elif(data_array[0] == 'Convex Hull'):
-            results = find_convex_hull(data_array)
+            results = find_convex_hull(array_to_points(data_array))
         
         #else if the first line of the file asks for the Largest empty circle
         elif(data_array[0] == 'Largest Empty Circle'):
-            results = find_closest_pair(data_array)
+            results = find_closest_pair(array_to_points(data_array))
 
         write_txt(results)
+        print(results)
         return
 
 if __name__ == '__main__':

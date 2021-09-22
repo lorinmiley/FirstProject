@@ -17,7 +17,6 @@ def read_txt(filename):
         
         for line in Lines:
             data_array.append(line.strip())
-            print(line.strip())
         inputfile.close()
     except FileNotFoundError:
         #throw error if the file does not exist and quit the program
