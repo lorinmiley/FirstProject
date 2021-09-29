@@ -4,7 +4,7 @@ from math import *
 # content of test_class.py
 class TestClass:
 
-    def test_one(self):
+    def test_One(self):
         #creates a 2d array with numerical points
         test_points = [[1,2],[3,6],[3,3],[1,9],[9,0],[8,10],[99,34]]
         tester = closest_pair.calculate_closest_pair(test_points)
