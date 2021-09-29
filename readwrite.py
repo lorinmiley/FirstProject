@@ -4,6 +4,8 @@
 
 #read_txt function you input a file and it parses it into an array
 from datetime import datetime
+# Import the os module 
+import os
 
 #read_txt function reads an input file and parses it into an array it will return
 def read_txt(filename):
@@ -11,7 +13,10 @@ def read_txt(filename):
 
     #try to read file
     try:
-        inputfile = open(filename, 'r')
+        # get current working directory and add folder and filename to current working directory path 
+        cwd = os.getcwd() + '/FirstProject/test_txt_files/' + filename
+        print(cwd)
+        inputfile = open(cwd, 'r')
         Lines = inputfile.readlines()
         data_array = []
         
@@ -20,7 +25,7 @@ def read_txt(filename):
         inputfile.close()
     except FileNotFoundError:
         #throw error if the file does not exist and quit the program
-        print("File does not exists!")
+        print("File does not exist!")
         quit()
     return data_array
     

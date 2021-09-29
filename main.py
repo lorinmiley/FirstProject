@@ -70,10 +70,10 @@ class Main:
     @staticmethod
     def __init__(*args: str) -> None:
         #main running code goes here
-        filename = 'test_txt_files/test_intersection.txt'
-        # filename = 'test_txt_files/test_pair_of_points.txt'
-        # filename = 'test_txt_files/test_convex.txt'
-        # filename = 'test_txt_files/test_largest_empty_circle.txt'
+        #filename = 'test_intersection.txt'
+        # filename = 'test_pair_of_points.txt'
+        # filename = 'test_convex.txt'
+        filename = 'test_largest_empty_circle.txt'
 
         #parse the text file to an array
         data_array = read_txt(filename)
@@ -95,7 +95,7 @@ class Main:
         
         #else if the first line of the file asks for the Largest empty circle
         elif(data_array[0] == 'Largest Empty Circle'):
-            results = find_closest_pair(array_to_points(data_array))
+            results = find_largest_empty_circle(array_to_points(data_array))
 
         #write_txt(results)
         print(results)
