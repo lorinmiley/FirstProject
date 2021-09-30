@@ -71,9 +71,15 @@ class Main:
     def __init__(*args: str) -> None:
         #main running code goes here
         #filename = 'test_intersection.txt'
+<<<<<<< HEAD
         filename = 'test_pair_of_points.txt'
         # filename = 'test_convex.txt'
         # filename = 'test_largest_empty_circle.txt'
+=======
+        # filename = 'test_pair_of_points.txt'
+        # filename = 'test_convex.txt'
+        filename = 'test_largest_empty_circle.txt'
+>>>>>>> 5bf7bfbf96920ea9f6fb063eef20f6f35045ecad
 
         #parse the text file to an array
         data_array = read_txt(filename)

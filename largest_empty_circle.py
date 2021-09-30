@@ -6,6 +6,10 @@ from scipy.spatial import Voronoi
 # for finding convex hull of vertices in Voronoi diagram
 from scipy.spatial import ConvexHull
 import numpy as np
+<<<<<<< HEAD
+=======
+import cv2
+>>>>>>> 5bf7bfbf96920ea9f6fb063eef20f6f35045ecad
 from scipy.spatial import voronoi_plot_2d
 from array import *
 import math
