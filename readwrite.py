@@ -14,11 +14,7 @@ def read_txt(filename):
     #try to read file
     try:
         # get current working directory and add folder and filename to current working directory path 
-<<<<<<< HEAD
         cwd = os.getcwd() + '/test_txt_files/' + filename
-=======
-        cwd = os.getcwd() + '/FirstProject/test_txt_files/' + filename
->>>>>>> 5bf7bfbf96920ea9f6fb063eef20f6f35045ecad
         print(cwd)
         inputfile = open(cwd, 'r')
         Lines = inputfile.readlines()
